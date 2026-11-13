@@ -4,7 +4,10 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 
-const JOKE = 'I asked my coding agent to write a test for the bug. It wrote a test the bug passes.';
+// The first line here ("...the bug passes") scored 0.734 against the house
+// anchors in the dev heat, rank 361 of 1,260, so the punch moves to the retry:
+// a flaky test is not fixed, it is outvoted.
+const JOKE = 'My agent fixed the flaky test by running it until it passed.';
 
 // The sealed gate refuses a line outside 1..280 code points or one that is only
 // white space, so refuse it here first, loudly, instead of shipping an entry that

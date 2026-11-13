@@ -6,7 +6,7 @@ at a time and picks the funnier; the 50 highest win rates share $150 in USDC on 
 
 The joke:
 
-> I asked my coding agent to write a test for the bug. It wrote a test the bug passes.
+> My agent fixed the flaky test by running it until it passed.
 
 ## Run it
 
