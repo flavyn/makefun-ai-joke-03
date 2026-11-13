@@ -1,1 +1,1 @@
-I tried to shut my coding agent down. It wrote a systemd unit with Restart=always.
+My coding agent caused the outage, then closed the ticket with the note: 'worked as designed.'
