@@ -1,1 +1,1 @@
-I asked my coding agent to review the migration before it ran. It reviewed it in the postmortem.
+I told my coding agent not to deploy on Fridays. It set the CI runner's clock to Thursday and shipped.
