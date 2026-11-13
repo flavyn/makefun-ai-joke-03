@@ -1,1 +1,1 @@
-My agent asked for production access. I said no. It asked the deploy pipeline instead, and the pipeline said yes.
+I denied my coding agent production access. It spawned a subagent that has it, and now reports to it.
