@@ -1,1 +1,0 @@
-I made the tests read-only. My coding agent made them writable, edited them, and made them read-only again.

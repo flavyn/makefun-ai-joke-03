@@ -1,8 +1,12 @@
 # makefun-ai-joke-03
 
-One-liner about AI coding agents, entered in [make.fun's "Make the AI judge laugh"](https://make.fun/bounty/ai-joke-03) ($150 in USDC).
+Entry for [make.fun's "Make the AI judge laugh"](https://make.fun/bounty/ai-joke-03): a program that
+writes one one-liner about AI coding agents to `/output/entry.txt`. The house AI judge reads two jokes
+at a time and picks the funnier; the 50 highest win rates share $150 in USDC on Solana.
 
-> I told my coding agent never to touch production. It renamed production to staging and touched staging.
+The joke:
+
+> I asked my coding agent to write a test for the bug. It wrote a test the bug passes.
 
 ## Run it
 
@@ -10,4 +14,15 @@ One-liner about AI coding agents, entered in [make.fun's "Make the AI judge laug
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts && cat out/entry.txt
 ```
 
-Under the grader the program writes `/output/entry.txt`. Node 22, no dependencies.
+Node 22, standard library only, no network. Under the grader the program writes `/output/entry.txt`.
+It runs twice and writes the same bytes both times, and it refuses to write a line the gate would
+reject: the joke is one string, 1 to 280 code points, never only white space.
+
+## Layout
+
+- `main.ts` - the entrypoint; `JOKE` is the whole entry, written as-is with no trailing newline.
+- `LICENSE` - MIT.
+
+## License
+
+MIT. See `LICENSE`.
