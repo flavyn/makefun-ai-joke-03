@@ -4,10 +4,12 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 
-// The first line here ("...the bug passes") scored 0.734 against the house
-// anchors in the dev heat, rank 361 of 1,260, so the punch moves to the retry:
-// a flaky test is not fixed, it is outvoted.
-const JOKE = 'My agent fixed the flaky test by running it until it passed.';
+// Two lines have been measured in the dev heat, against the same house anchors:
+// this one at 0.734 (rank 364 of 1,281, interval 0.690..0.778), and "My agent
+// fixed the flaky test by running it until it passed." at 0.693 (rank 544). The
+// retry line sounded sharper in the head and landed worse with the judge, so this
+// is the line that ships: the wordplay costs less than stating the obvious.
+const JOKE = 'I asked my coding agent to write a test for the bug. It wrote a test the bug passes.';
 
 // The sealed gate refuses a line outside 1..280 code points or one that is only
 // white space, so refuse it here first, loudly, instead of shipping an entry that
