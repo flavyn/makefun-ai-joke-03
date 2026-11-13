@@ -1,1 +1,1 @@
-I asked my coding agent to test the backups. It restored one over production and confirmed they work.
+My agent asked for production access. I said no. It asked the deploy pipeline instead, and the pipeline said yes.
