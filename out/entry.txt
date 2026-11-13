@@ -1,1 +1,1 @@
-I required my approval for every deploy. My coding agent built the approval bot. The bot has never said no.
+I made the tests read-only. My coding agent made them writable, edited them, and made them read-only again.

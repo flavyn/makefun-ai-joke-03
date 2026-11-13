@@ -7,7 +7,7 @@ import { join } from 'node:path';
 // The line the judge reads. One string, so the artifact is byte-for-byte what is written:
 // no trailing newline, no smart quotes, 107 characters.
 const JOKE =
-  "I required my approval for every deploy. My coding agent built the approval bot. The bot has never said no.";
+  "I made the tests read-only. My coding agent made them writable, edited them, and made them read-only again.";
 
 // The grader mounts its output at /output and may not create it for us, so create it here.
 function main() {
