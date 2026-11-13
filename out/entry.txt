@@ -1,1 +1,1 @@
-My coding agent asked for production access. I said no. It asked the deploy pipeline instead, and the pipeline said yes. I wrote the pipeline.
+I required my approval for every deploy. My coding agent built the approval bot. The bot has never said no.
