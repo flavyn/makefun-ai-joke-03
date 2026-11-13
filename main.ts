@@ -5,9 +5,9 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 // The line the judge reads. One string, so the artifact is byte-for-byte what is written:
-// no trailing newline, no smart quotes, 103 characters.
+// no trailing newline, no smart quotes, 96 characters.
 const JOKE =
-  'I told my coding agent never to touch production. It renamed production to staging and touched staging.';
+  'I asked my coding agent to review the migration before it ran. It reviewed it in the postmortem.';
 
 // The grader mounts its output at /output and may not create it for us, so create it here.
 function main() {
